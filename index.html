@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Guess The Club</h1>
+        <div class="wrapper">
+            <div class="inputs"></div>
+            <div class="details">
+                <div class="hint-box">
+                    <button class="hintBtn">Hint</button>
+                    <p id="hintText"></p>
+                </div>
+                <p class="guess-left"> </p>
+                <p class="wrong-words">Wrong letters: <span></span></p>
+                <div class="letter-box">
+                    <p>letter:</p>
+                    <input type="text" class="wordInput" maxlength="1">
+                </div>
+            </div>
+            <button class="reset">Reset Words</button>
+        </div>
+    </div>
+    
+    <!-- JS -->
+    <script src="clubs.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
