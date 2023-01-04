@@ -55,7 +55,7 @@ function initGame(e) {
     if (e.key === 'Enter') {
         let keyLetter = e.target.value.toLowerCase();
         // console.log(keyLetter);
-        if(keyLetter.match(/^[A-Za-z]+$/) && !incorrectWords.includes(` ${keyLetter}`) && !correctWords.includes(keyLetter)) {
+        if(keyLetter.match(/^[A-Za-z]+$/) && !incorrectWords.includes(keyLetter) && !correctWords.includes(keyLetter)) {
             if (words.includes(keyLetter)) {
                 for(let i = 0; i < words.length; i++) {
                     if (words[i] == keyLetter) {
