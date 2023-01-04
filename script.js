@@ -90,6 +90,13 @@ function initGame(e) {
 }
 
 // Add Event Listeners
-// wordInput.addEventListener('input', initGame);
 wordInput.addEventListener('keydown', initGame);
+// Disable more than one letter in wordInput on small screens
+wordInput.addEventListener('keyup', function(e) {
+    let max = 1;
+    if (wordInput.value.length > max) {
+        wordInput.value = wordInput.value.substr(0, max);
+    }
+});
+
 resetBtn.addEventListener('click', randomWords);
